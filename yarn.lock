@@ -1069,6 +1069,11 @@ colorette@^1.2.1, colorette@^1.2.2:
   resolved "http://nodepackages.hellobike.cn:4873/colorette/-/colorette-1.2.2.tgz#cbcc79d5e99caea2dbf10eb3a26fd8b3e6acfa94"
   integrity sha1-y8x51emcrqLb8Q6zom/Ys+as+pQ=
 
+commander@*:
+  version "7.2.0"
+  resolved "http://nodepackages.hellobike.cn:4873/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
+  integrity sha1-o2y1fQtQHOEI5NIFWaFQo5HZerc=
+
 compute-scroll-into-view@^1.0.16:
   version "1.0.17"
   resolved "http://nodepackages.hellobike.cn:4873/compute-scroll-into-view/-/compute-scroll-into-view-1.0.17.tgz#6a88f18acd9d42e9cf4baa6bec7e0522607ab7ab"
@@ -2691,6 +2696,13 @@ minimist@^1.2.0, minimist@^1.2.5:
   version "1.2.5"
   resolved "http://nodepackages.hellobike.cn:4873/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI=
+
+mockjs@^1.1.0:
+  version "1.1.0"
+  resolved "http://nodepackages.hellobike.cn:4873/mockjs/-/mockjs-1.1.0.tgz#e6a0c378e91906dbaff20911cc0273b3c7d75b06"
+  integrity sha1-5qDDeOkZBtuv8gkRzAJzs8fXWwY=
+  dependencies:
+    commander "*"
 
 moment@^2.24.0, moment@^2.25.3:
   version "2.29.1"

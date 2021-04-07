@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from 'antd';
 import { useHistory } from 'react-router-dom';
-import { getCityList } from '@/api/test-price';
+import { getCityList, ICityItem } from '@/api/getCity';
 
 const Index: React.FC = () => {
+const [cityList, setCityList] = useState([] as ICityItem[])
+
   const history = useHistory();
   const handleClick = () => {
     history.push('/about');
@@ -11,14 +13,13 @@ const Index: React.FC = () => {
   useEffect(() => {
     async function init() {
       const actions = await getCityList();
-      console.log('testetssts', actions);
+      setCityList(actions.cityList)
     }
     init();
   }, []);
   return (<div>
-    <p>123232</p>
     <Button type="primary" onClick={handleClick}>点击到about</Button>
-    
+    {cityList.map(item => <p key={item.value}>{item.value}</p>)}
   </div>);
 };
 export default Index;

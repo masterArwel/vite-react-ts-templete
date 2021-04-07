@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Button} from 'antd'
 import { useHistory } from "react-router-dom"
 
-const About = () => {
+const About: React.FC = () => {
   const history = useHistory();
   const handleClick = () => {
     history.push('/about/test')

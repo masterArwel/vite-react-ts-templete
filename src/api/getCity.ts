@@ -3,8 +3,8 @@ import config from '~/config/env';
 
 // 用于mock接口
 const API = config.HOTEL_API;
-console.log(API);
-const isMock = true;
+
+const isMock = false;
 
 export interface ICityItem {
   value: string;
